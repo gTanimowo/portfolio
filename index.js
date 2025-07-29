@@ -74,29 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Animate stats counter
-  const statNumbers = document.querySelectorAll(".stat-number");
 
-  function animateStats() {
-    statNumbers.forEach((stat) => {
-      const target = parseInt(stat.getAttribute("data-count"));
-      const duration = 2000;
-      const step = target / (duration / 16);
-      let current = 0;
-
-      const updateCount = () => {
-        current += step;
-        if (current < target) {
-          stat.textContent = Math.floor(current);
-          requestAnimationFrame(updateCount);
-        } else {
-          stat.textContent = target + "+";
-        }
-      };
-
-      updateCount();
-    });
-  }
 
   // Intersection Observer for animations
   const observerOptions = {
@@ -129,8 +107,6 @@ document.addEventListener("DOMContentLoaded", function () {
   contactForm.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    // Here you would typically send the form data to a server
-    // For demo purposes, we'll just show an alert
     alert("Thank you for your message! I will get back to you soon.");
     this.reset();
   });
