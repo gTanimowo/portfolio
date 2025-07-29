@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Portfolio | Your Name</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+    <script src="index.js" defer></script>
+
+
+</head>
+<body>
+    <!-- Fixed Header -->
+    <header class="fixed-header">
+        <div class="container">
+            <a href="#" class="logo">My Portfolio</a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <button id="theme-toggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+                <button id="mobile-theme-toggle" aria-label="Toggle dark mode">
+                    <span>Toggle Theme</span>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate-pop-in">Hi, I'm <span class="highlight">Golden</span></h1>
+                <h2 class="animate-pop-in">Frontend Developer</h2>
+                <p class="animate-pop-in">I create clean, responsive websites focused on performance, accessibility, and great user experience.</p>
+                <div class="hero-btns animate-pop-in">
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image animate-pop-in">
+                <div class="image-wrapper">
+                    <!-- <img src="https://via.placeholder.com/400x400" alt="Profile picture" class="profile-img"> -->
+                    <div class="tech-icons">
+                        <i class="fab fa-html5" title="HTML5"></i>
+                        <i class="fab fa-css3-alt" title="CSS3"></i>
+                        <i class="fab fa-js" title="JavaScript"></i>
+                        <i class="fab fa-react" title="React"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About <span class="highlight">Me</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hi, I'm Golden. Honestly? I love figuring things out and offering solutions.</p>
+
+                    <p>For years, I did that in customer service, helping people untangle difficult situations by listening closely, breaking problems down, and finding solutions that actually worked. I'm motivated by solving real problems and seeing solutions that work.</p>
+                  
+                    <p>I made the move to transition into tech because I want to keep solving real-world problems through code.</p>
+                  
+                    <p>At IT Careers, I've built and refined my frontend skillset with React, JavaScript, HTML, and CSS, and I'm now deepening my backend knowledge to grow into a developer who can confidently build across multiple layers of the stack.</p>
+                  
+                    <p>My customer service background has given me valuable transferable skills that I bring to software development. I get to the root of the issue, solve it cleanly, and make the experience better than expected.</p>
+                  
+                    <p>When I'm not coding, I'm usually unwinding with a great comedy movie or getting stuck into something creative.</p>
+                    <div class="about-actions">
+                        <a href="#" class="btn">Download Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <p>Semantic markup, accessibility, SEO optimization</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <p>Flexbox, Grid, Animations, Responsive Design</p>
+
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>ES6+, DOM manipulation, Async programming</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React</h3>
+                    <p>Hooks, Context API, Redux, Performance</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3>Git</h3>
+                    <p>Version control, GitHub, GitFlow</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>Mobile-first, cross-browser compatibility</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon">
+                      <i class="fas fa-vial"></i> 
+                    </div>
+                    <h3>Jest</h3>
+                    <p>Unit Testing, Mocking, Test Coverage</p>
+                  </div>
+                  
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="section tech-stack">
+        <div class="container">
+            <h2 class="section-title">My <span class="highlight">Tech Stack</span></h2>
+            <div class="tech-stack-container">
+                <div class="tech-stack-item" data-aos="zoom-in">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                    <span>HTML5</span>
+                </div>
+                <div class="tech-stack-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                    <span>CSS3</span>
+                </div>
+                <div class="tech-stack-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-stack-item" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                    <span>React</span>
+                </div>
+                <div class="tech-stack-item" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                    <span>Node.js</span>
+                </div>
+                <div class="tech-stack-item" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                    <span>Git</span>
+                </div>
+                <div class="tech-stack-item" data-aos="zoom-in" data-aos-delay="700">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                    <span>Figma</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="./assets/Jamming.PNG" alt="Project 1">
+                        <div class="project-links">
+                            <a href="https://jammming-app-gd.netlify.app/" aria-label="View project demo" target="_blank"><i class="fas fa-eye"></i></a>
+                            <a href="https://github.com/gTanimowo/jammming" aria-label="View project code" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Jamming</h3>
+                        <p>A music app that connects to the Spotify API to search for songs, create playlists, and display users saved playlists.</p>
+                        <div class="project-tech">
+                          <span>React</span>
+                          <span>Spotify API</span>
+                          <span>JavaScript</span>
+                        </div>
+                      </div>
+                      
+                </div>
+                <!-- <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400" alt="Project 2">
+                        <div class="project-links">
+                            <a href="#" aria-label="View project demo"><i class="fas fa-eye"></i></a>
+                            <a href="#" aria-label="View project code"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Management App</h3>
+                        <p>A productivity application for organizing tasks with drag-and-drop functionality and team collaboration.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Firebase</span>
+                            <span>Material UI</span>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="./assets/Reddit.PNG" alt="Project 3">
+                        <div class="project-links">
+                            <a href="https://redditminimall.netlify.app/" aria-label="View project demo"><i class="fas fa-eye"></i></a>
+                            <a href="https://github.com/gTanimowo/redditMinimal" aria-label="View project code"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Reddit Clone</h3>
+                        <p>A social platform that fetches posts from Reddit APIs, featuring subreddit navigation, keyword search, comments viewing, and sharing post links.</p>
+                        <div class="project-tech">
+                          <span>React</span>
+                          <span>Reddit API</span>
+                          <span>Redux</span>
+                          <span>JavaScript</span>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <!-- <div class="projects-cta">
+                <a href="#" class="btn">View All Projects</a>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:your.email@example.com">goldendennar@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <a href="tel:+1234567890">+447721706552</a>
+                        </div>
+                    </div>
+                    <!-- <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a>
+                        </div>
+                    </div> -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/yourusername" target="_blank">https://github.com/gTanimowo</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- <div class="footer-logo">
+                    <a href="#">Portfolio</a>
+                    <p>Building digital experiences that matter.</p>
+                </div> -->
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Me</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+                <p>Designed & Developed with ❤️ by You</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript will go here
+    </script>
+</body>
+</html>
